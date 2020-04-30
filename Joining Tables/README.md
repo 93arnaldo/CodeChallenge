@@ -25,6 +25,6 @@ WHERE
   
   But it also doesn't work. Another approach that I would follow next is to **use a subquery to get the oldest transaction** first, and then join it with the rest of the tables. 
   
-However, I was only able to test these queries for a very short period of time because during the whole weekend, I would get the message of: **SQL Error [53300]: FATAL: too many connections for role "mqhyrlua"**, which wouldn't allow me to test and correct my queries. Check image below:
+However, I was only able to test these queries for a very short period of time because during the whole weekend, I would get the message of: **SQL Error [53300]: FATAL: too many connections for role "mqhyrlua"**, which wouldn't allow me to test and correct my queries. Check screenshot below:
 
 ![](images/failure.png)
