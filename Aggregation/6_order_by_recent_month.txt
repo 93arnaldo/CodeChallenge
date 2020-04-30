@@ -1,0 +1,13 @@
+select
+	*,
+	extract (year
+from
+	created) as year,
+	extract (month
+from
+	created) as month
+from
+	loans
+order by
+	year desc,
+	month desc
