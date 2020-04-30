@@ -1,0 +1,16 @@
+select
+	sum(amount) as total_amount,
+	extract (year
+from
+	created) as year,
+	extract (month
+from
+	created) as month
+from
+	loans
+group by
+	year,
+	month
+order by
+	year,
+	month
