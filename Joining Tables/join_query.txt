@@ -1,0 +1,18 @@
+-- Joining Tables
+SELECT
+	l.id,
+	l.amount,
+	-- using distict user in order to show only the first disbursment transaction by user
+ DISTINCT u.id,
+	t.amount
+FROM
+	transactions t
+INNER JOIN loans l ON
+	t.loan_id = l.id
+INNER JOIN users u ON
+	t.user_id = u.id
+WHERE
+	l.loan_status = 'active'
+	OR l.loan_status = 'repaid'
+	-- ordering by earliest date to show only disbursment type of transaction
+	ORDER BY t.created ASC
