@@ -27,5 +27,5 @@ WHERE
   
 However, I was only able to test these queries for a very short period of time because during the whole weekend, I would get the message of: **SQL Error [53300]: FATAL: too many connections for role "mqhyrlua"**, which wouldn't allow me to test and correct my queries. Check screenshot below:
 
-<img src="images/failure.png" />
+<img src="images/failure.png"/>
 
